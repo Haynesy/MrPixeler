@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" >
+
+	<head>
+  		<meta charset="utf-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  		<title>Test</title>
+
+  		<!-- If you are using CSS version, only link these 2 files, you may add app.css to use for your overrides if you like. -->
+  		<link rel="stylesheet" href="css/normalize.css">
+  		<link rel="stylesheet" href="css/foundation.css">
+
+  		<!-- If you are using the gem version, you need this only -->
+  		<!-- <link rel="stylesheet" href="css/app.css"> -->
+
+  		<script src="js/vendor/custom.modernizr.js"></script>
+
+  		<style type="text/css">
+  			
+  			* {
+  				/*border: solid 1px red;*/
+  			}
+
+  			html, body {
+  				height: 100%;
+  			}
+
+  			body {
+  				padding-top: 1px;
+  				padding-left: 1px;
+  			}
+
+  			.off-canvas-wrap {
+  				position: absolute;
+
+  				left: 0;
+  				top: 0;
+  			}
+
+  			.off-canvas-wrap, .inner-wrap {
+				height: 100%;  				
+
+  			}
+
+  			
+  			.left-off-canvas-menu ul li {
+  				padding: 10px;
+  			}
+
+			#canvas {
+  				background: #dddddd;
+  			}
+  		</style>
+
+	</head>
+	<body>
+
+		<canvas id="canvas"></canvas>
+		<div class="off-canvas-wrap">
+			<div class="inner-wrap">
+
+		    	<a class="left-off-canvas-toggle button">Menu</a> 
+
+			    <!-- Off Canvas Menu -->
+			    <aside class="left-off-canvas-menu">
+			        <!-- whatever you want goes here -->
+			        <ul>
+			        	<li><a href="#" class="">Item 1</a></li>
+			          	<li><a href="#" class="">Item 2</a></li>
+			          	
+			        </ul>
+			    </aside>
+
+			    <!-- main content goes here -->
+			    
+
+	  			<!-- close the off-canvas menu -->
+		  		<a class="exit-off-canvas"></a>
+
+	  		</div>
+		</div>
+
+	  	<script src="js/vendor/jquery.js"></script>
+	  	<script src="js/foundation.min.js"></script>
+	  	<script>
+	    	$(document).foundation();
+	  	</script>
+	  	<script type="text/javascript" src="Ex08.js"></script>
+	</body>
+</html>
