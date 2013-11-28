@@ -16,53 +16,15 @@
 
   		<script src="js/vendor/custom.modernizr.js"></script>
 
-  		<style type="text/css">
-  			
-  			* {
-  				/*border: solid 1px red;*/
-  			}
-
-  			html, body {
-  				height: 100%;
-  			}
-
-  			body {
-  				padding-top: 1px;
-  				padding-left: 1px;
-  			}
-
-  			.off-canvas-wrap {
-  				position: absolute;
-
-  				left: 0;
-  				top: 0;
-  			}
-
-  			.off-canvas-wrap, .inner-wrap {
-				height: 100%;  				
-
-  			}
-
-  			
-  			.left-off-canvas-menu ul li {
-  				padding: 10px;
-  			}
-
-			#canvas {
-  				background: #dddddd;
-  			}
-  		</style>
+      <link rel="stylesheet" type="text/css" href="css/app.css" />
 
 	</head>
 	<body>
 
-		<canvas id="canvas"></canvas>
 		<div class="off-canvas-wrap">
 			<div class="inner-wrap">
 
-		    	<a class="left-off-canvas-toggle button">Menu</a> 
-
-			    <!-- Off Canvas Menu -->
+		    	<!-- Off Canvas Menu -->
 			    <aside class="left-off-canvas-menu">
 			        <!-- whatever you want goes here -->
 			        <ul>
@@ -72,20 +34,23 @@
 			        </ul>
 			    </aside>
 
-			    <!-- main content goes here -->
-			    
 
+			    <!-- main content goes here -->
+		      <canvas id="canvas">Canvas element is not supported</canvas>	    
+          <a class="left-off-canvas-toggle button">Menu</a> 
+          <div id="menu"></div>
 	  			<!-- close the off-canvas menu -->
 		  		<a class="exit-off-canvas"></a>
 
 	  		</div>
 		</div>
 
-	  	<script src="js/vendor/jquery.js"></script>
-	  	<script src="js/foundation.min.js"></script>
-	  	<script>
-	    	$(document).foundation();
-	  	</script>
-	  	<script type="text/javascript" src="Ex08.js"></script>
+	  
+  	<script src="js/vendor/jquery.js"></script>
+  	<script src="js/foundation.min.js"></script>
+  	<script type="text/javascript" src="js/app.js"></script>
+    <script>
+        $(document).foundation();
+    </script>
 	</body>
 </html>

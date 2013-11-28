@@ -1,0 +1,47 @@
+/** {
+	border: solid 1px red;
+}*/
+
+html, body {
+	height: 100%;
+}
+
+body {
+	padding-top: 1px;
+	padding-left: 1px;
+}
+
+.off-canvas-wrap, .left-off-canvas-menu {
+	position: absolute;
+
+	left: 0;
+	top: 0;
+}
+
+.off-canvas-wrap, .inner-wrap {
+height: 100%;  				
+
+}
+
+
+.left-off-canvas-menu ul li {
+	padding: 10px;
+}
+
+#canvas {
+	background: #dddddd;
+  
+  position: absolute;
+
+	left: 1px;
+	top: 1px;
+}
+
+
+.left-off-canvas-menu{
+	/* opactiy 0. somthing */
+	
+}
+.left-off-canvas-menu:hover{
+	/* opacity full */	
+}
