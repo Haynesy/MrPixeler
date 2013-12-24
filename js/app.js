@@ -12,10 +12,13 @@ canvas.onmousedown = function(event){
 		msg: 'mouse down', 
 		event: event
 	});
+	
+	window.event.returnValue = false;
+	event.preventDefault();
+	
 
 	if(event.button == rightMouseButton)
-		menu.show();
-	
+		window.menu.show();
 }
 
 canvas.onmouseup = function(event){
@@ -24,22 +27,40 @@ canvas.onmouseup = function(event){
 		event: event
 	});
 
-	if(event.button == rightMouseButton)
-		menu.hide();
+	window.event.returnValue = false;
+	event.preventDefault();
 	
+
+	if(event.button == rightMouseButton)
+		window.menu.hide();
+}
+
+if (document.addEventListener) {
+    document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+    }, false);
+} else {
+    document.attachEvent('oncontextmenu', function() {
+        window.event.returnValue = false;
+    });
 }
 
 var Menu = function(){
-	this.show = function(){
 
+	this.menu = $('#menu');
+
+	this.show = function(){
+		this.menu.show();
 	};
 
 	this.hide = function(){
-
+		this.menu.hide();
 	};
 
-	// Todo create menu item,
+	this.hide();
 }
+
+window.menu = new Menu();
 
 // Scale canvas by using CSS
 $(document).ready(function(){

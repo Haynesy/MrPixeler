@@ -45,3 +45,14 @@ height: 100%;
 .left-off-canvas-menu:hover{
 	/* opacity full */	
 }
+
+#menu {
+	width: 100px;
+	height: 100px;
+	background-color: #121289;
+	border: 1px solid red;
+
+	position: absolute;
+	left: -1000px;
+	top: -1000px;
+}
